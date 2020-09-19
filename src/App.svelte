@@ -3,6 +3,9 @@
   <span slot="sidebar">
     <MenuItem href="/"    > Home </MenuItem>
     <MenuItem href="/page"> Example Page</MenuItem>
+
+    <MenuItem href="/pix"> Pix Page</MenuItem>
+
     <MenuItem href="/toto" eclass="menu-item-divided"> Dummy menu </MenuItem>
   </span>
   <span slot="content">
@@ -19,23 +22,23 @@
 
   import Home from './Home.svelte'
   import Page from './Page.svelte'
+  import Pix from './Pix.svelte'
   import NotFound from './NotFound.svelte'
 
   // routes
   const routes = {
     '/': Home,
     '/page' : Page,
+    '/pix' : Pix,
     '*': NotFound,
   };
 
 </script>
 
 <style>
-/* Style for "active" links; need to mark this :global because the router adds the class directly */
-:global(.pure-menu-link.active) {
-    font-weight: bold;
-    color: #fff !important;
-}
-
-
+  /* Style for "active" links; need to mark this :global because the router adds the class directly */
+  :global(.pure-menu-link.active) {
+      font-weight: bold;
+      color: #f8f !important;
+  }
 </style>
