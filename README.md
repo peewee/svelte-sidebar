@@ -1,4 +1,15 @@
 
+
+# github
+
+# add some new or changed files
+  git add public/index.html src/App.svelte src/Pix.svelte
+# commit with message
+  git commit -m 'changed-file & new-file added'
+# push to remote
+  git push origin master
+
+
 # svelte app
 
 This is a demo/template for a very simple svelte single page application with a purecss based simple responsive side bar.
